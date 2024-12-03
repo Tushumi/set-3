@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="set3.css">
+    <title>Set3</title>
+  </head>
+  <body>
+    
+    <main>
+    
+
+
+      
+   
+      <section class="choices-section">
+        <div class="challenge-container sing">
+          <h4 class="challenge-name">The 99 <br> Bottles <br> of BEER</h4>
+          <p class="challenge-label"> Sing</p>
+          <button class="challenge-btn" data-value="sing-section">SING</button>
+        </div>
+
+        <div class="challenge-container fizz-buzz">
+          <h4 class="challenge-name">Fizz<br>Buzz</h4>
+          <p class="challenge-label"> Sing</p>
+          <button class="challenge-btn fizz-buzz-btn" data-value="fizz-buzz-section">PLAY</button>
+        </div>
+
+        <div class="challenge-container fibonacci">
+          <h4 class="challenge-name">Fibonacci<br>Sequence</h4>
+          <p class="challenge-label">Fibonacci</p>
+          <button class="challenge-btn" data-value="fibonacci-section">Generate</button>
+        </div>
+      </section>
+
+      <button class="back-button">Back</button>
+
+     
+      <section class="sing-section">
+        <h1 class="heading">The 99 Bottles of BEER</h1>
+        <div class="song-container">
+          <p class="lyrics">
+          
+          </p>
+        </div>
+        <button class="sing-btn">Sing</button>
+      </section>
+
+   
+      <section class="fizz-buzz-section">
+        <h1 class="heading">FizzBuzz</h1>
+        <p class="result-container">Press the button to start</p>
+        <div class="buttons-container">
+          <button class="press-me-btn">Press me</button>
+          <button class="reset-btn">Reset</button>
+        </div>
+      </section>
+
+     
+      <section class="fibonacci-section">
+        <h1 class="heading">Fibonacci Sequence</h1>
+        <p class="question-txt">How long would you like your sequence?</p>
+          <input type="number" class="input-number" required>
+          <button class="generate-btn">Generate</button>
+          <button class="clear-btn">Clear</button>
+        <p class="result-container"></p>
+      </section>
+    </main>
+
+    <script type="module" src="script/main.js"></script>
+  </body>
+</html>

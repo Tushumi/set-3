@@ -1,0 +1,184 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html{
+  height: 100%
+}
+body{
+  --accent-color: rgb(0, 96, 0);
+
+  background-color: rgb(230, 230, 230);
+  font-family: Arial, Helvetica, sans-serif;
+  height: 100%;
+}
+
+main .choices-section{
+  position: relative;
+}
+
+
+
+.choices-section {
+  height: 40rem;
+}
+
+.choices-section .challenge-container{
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  border: 1px solid black;
+  width: 15rem;
+  height: 19rem;
+  border-radius: 50%;
+  border: none;
+  box-shadow: 2px 4px 2px 0px rgba(0, 0, 0, 0.2);
+  position: absolute;
+}
+
+.choices-section .challenge-container.sing{
+  bottom: 10px;
+  left: 200px;
+
+}
+.choices-section .challenge-container.fizz-buzz{
+  left: 50%;
+  top: 20px;
+  transform: translateX(-50%);
+}
+.choices-section .challenge-container.fibonacci{
+  bottom: 10px;
+  right: 200px;
+}
+
+.challenge-container .challenge-name{
+  color: var(--accent-color);
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+}
+
+.challenge-container .challenge-label{
+  opacity: 0.6;
+  margin-bottom: 2.5rem;
+}
+
+.challenge-container .challenge-btn{
+  width: fit-content;
+  padding: 0.5rem 1.3rem;
+  margin-inline: auto;
+  border: none;
+  border-radius: 20px;
+  box-shadow: 3px 4px 1px 0px rgba(0, 0, 0, 0.119);
+  color: var(--accent-color);
+  cursor: pointer;
+}
+
+
+button.back-button{
+  display: none;
+  padding: 1rem 2rem;
+  border-radius: 10px;
+  font-size: 1.2rem;
+  background-color: black;
+  color: white;
+  position: absolute;
+  top: 30px;
+  left: 70px
+}
+
+
+
+section:not(.choices-section){
+  --pastel-color: rgb(0, 219, 113);
+
+  display: none;
+  background-color: var(--accent-color);
+  margin-top: 3rem;
+  padding: 2rem 1.5rem;
+  width: 40rem;
+  margin-inline: auto;
+  border-radius: 10px;
+}
+
+section:not(.choices-section) .heading{
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: var(--pastel-color);
+}
+
+section:not(.choices-section) .result-container{
+  background-color: var(--pastel-color);
+  border-radius: 10px;
+}
+
+@keyframes scale-up{
+  from{
+    transform: scale(0);
+  }
+  to{
+    transform: scale(1);
+  }
+}
+
+section:not(.choices-section) button{
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 0.4rem 0.7rem;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+
+
+.sing-section .song-container{
+ background-color: var(--pastel-color);
+ padding: 2rem ;
+ border-radius: 10px;
+ text-align: center;
+ margin-bottom: 1rem;
+ width: 70%;
+ margin-inline: auto
+}
+
+.sing-section .sing-btn{
+  margin-left: 5rem;
+}
+
+
+.fizz-buzz-section .result-container{
+  width: 30rem;
+  margin-inline: auto;
+  padding: 1.5rem;
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 2rem; 
+}
+
+.fizz-buzz-section .buttons-container{
+  margin-left: 2rem;
+}
+
+
+
+.fibonacci-section .question-txt{
+  text-align: center;
+  margin-bottom: 1rem;
+  color: white;
+}
+
+.fibonacci-section .input-number{
+  margin-left: 8rem;
+  border-radius: 8px;
+  margin-bottom: 3rem;
+}
+
+.fibonacci-section .result-container{
+  padding: 0.6rem 2rem;
+  color: black;
+  overflow: scroll;
+}
